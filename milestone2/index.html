@@ -17,43 +17,159 @@
 
 <body style="margin:0;padding:10">
 
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarMenu">
-                    <ul class="navbar-nav">
-                        <li><a class="nav-link" href="../index.html">Home</a></li>
-                        <li>
-                            <a class="nav-link" href="../milestone1/index.html">Milestone 1</a>
-                        </li>
-                        <li>
-                            <a class="nav-link active" href="../milestone2/index.html">Milestone 2</a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav">
+                    <li><a class="nav-link" href="../index.html">Home</a></li>
+                    <li>
+                        <a class="nav-link" href="../milestone1/index.html">Milestone 1</a>
+                    </li>
+                    <li>
+                        <a class="nav-link active" href="../milestone2/index.html">Milestone 2</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-
-        <h1>Milestone 2</h1>
-
-        <div class="reportSection" style="width: 85%; margin: auto;">
-           
         </div>
-        
-        <!-- Javascript Links-->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
-    </body>
+    </nav>
+
+    <h1>Milestone 2</h1>
+    <div class="reportSection" style="width: 85%; margin: auto;">
+        <div>
+            <h3>Balloon Game</h3>
+            <h5>Colors</h5>
+            <img src="/public/balloon.PNG" class="center-pic">
+            <p>
+                The initial design that we had was to implement a simple selection game where the user would choose the
+                item by tapping/clicking on it. The decision was made to focus on educating the user about colors with
+                this implementation. Since children with ASD react more positively to pastel colors with lower
+                luminance,
+                it was decided to split each color into 3 different levels; soft, medium, and strong. As the user
+                progresses,
+                they are slowly introduced to stronger colors with a higher variation in colors viewable at once. The
+                other
+                challenge introduced with this game at higher difficulties is movement of each balloon, and while the
+                user is
+                introduced to slow consistent movement, the level of movement does not have a radical increase due to
+                its
+                level of discomfort to the user.
+            </p>
+            <p>
+                The primary advantage of this design could be implemented with the majority of topics we wish to teach.
+                The
+                simplistic gameplay interaction allowed the game’s challenge to progress at a consistent rate without
+                overwhelming
+                the user.
+            </p>
+        </div>
+
+        <div>
+            <h3>Shape Game</h3>
+            <h5>Shapes</h5>
+            <img src="/public/shapes.PNG" class="center-pic">
+            <p>
+                In the shapes game, children learn the following elementary shapes: star, cicle, square, and triangle.
+                Other shapes
+                may be added to higher levels, depending on the success rate following these initial shapes, and the
+                child’s proclivity
+                to succeed with more difficult shapes. The objective of this game is to be able to correctly place a
+                shape into the
+                “shape box” marked by an outline of a specific shape, i.e. a triangle. The child must then correctly
+                choose the triangle
+                shape from an assortment of given shapes, and drag it to the location of the outline on the “shape box”.
+                Auditory responses
+                follow after successful and unsuccessful attempts, which can either be “correct”, or “try again”, marked
+                by green and red
+                colors respectively. This also helps build associations that the color green is typically used for
+                correct answers whereas
+                red colors are used for incorrect answers. Some strengths of this design are that children will be able
+                to understand and
+                learn various shapes one at a time, and make sense of the shapes pictographically. However, potential
+                drawbacks can be
+                assessing their skills in different environments, since the game is a consistent environment which can
+                become predictable
+                and eventually plateau the learning curve once the child has reached mastery of certain fundamental
+                shapes. Additionally,
+                the rewarding system is still evolving; however, for this game in particular, it is possible that the
+                auditory reward of
+                “good job” may not be enough for the child.
+            </p>
+        </div>
+
+        <div>
+            <h3>Maze Game</h3>
+            <h5>Following Directions</h5>
+            <img src="/public/maze.PNG" class="center-pic">
+            <p>
+                In this mini game children are presented with directions to help a character on screen get home. The
+                game presents a path
+                from a character to a house, and the user is asked to follow a sequence of steps to help the character
+                get to the house.
+            </p>
+            <p>
+                When doing our research, we found out that children with autism often find it difficult to follow
+                instructions and require
+                many prompts to successfully complete a task. When moving to different locations these difficulties are
+                apparent. Since
+                kids with autism find online games engaging because of the audio and visual aspects, this game
+                incorporates clear and
+                easily understandable graphics and some interesting sounds would help autistic children learn to follow
+                instructions and
+                find a path.
+            </p>
+        </div>
+
+        <div>
+            <h3>Design Decisions</h3>
+            <p>
+                We chose this color scheme because we learned children with autism prefer duller colors with low
+                luminance. We also wanted
+                to make the game simple because our target audience is young, which is why navigating through the game
+                only requires
+                taps/clicks with lots of instructions. Our balloon game also only requires taps/clicks, but this game
+                differs from the
+                colors game because unlike the colors which has mutually exclusive levels, this game is a continuous
+                process which has
+                an obvious goal. We created this option to explore whether kids prefer a discrete or continuous game.
+                This game essentially
+                evolved from the colors game to incorporate some more complex concepts that the users may like. Some
+                other design decisions
+                for this game include presenting the directions as well as the graphical directional panel for users so
+                that they are encouraged
+                to follow directions and stay familiar with common directional concepts such as ‘go left’, ‘go right’,
+                ‘go up’, ‘go down’ with
+                images. The character also moves closer to the house (goal) as the user clicks the correct choice
+                because we wanted to engage
+                the user with appealing visual aspects and a sense of accomplishment. The user is also motivated through
+                constant feedback
+                though positive messages and graphics.
+            </p>
+        </div>
+
+        <iframe style="margin: auto;"
+            src="https://docs.google.com/presentation/d/e/2PACX-1vSE8MBRkpSyjy6reC9q6TzEzRWqmGQ9oS7KiG1mv8Kw0b6WEWksxoFSp07UvKJTh4yDZiXjQpfhsCaN/embed?start=false&loop=true&delayms=15000"
+            frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true"
+            webkitallowfullscreen="true">
+        </iframe>
+
+    </div>
+
+
+
+    <!-- Javascript Links-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>
