@@ -28,11 +28,12 @@ li::first-letter{
     background-color: #ccc;
   }
   
-  /* Style the accordion panel. Note: hidden by default */
+  /* Style the accordion panel*/
   .panel {
     padding: 2px;
     font-size: 1.25em;
     background-color: white;
+    width: 85%;
     display: none;
     overflow: hidden;
   }
