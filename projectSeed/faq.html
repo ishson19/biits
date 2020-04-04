@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./faq.css" />
+</head>
+
+<body>
+    
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav">
+                    <li><a class="nav-link" href="./landingPortal.html">Home</a></li>
+                    <li>
+                        <a class="nav-link active" href="./gamesPortal.html">Games</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./parentMain.html">Parent Portal</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./faq.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./index.html">Sign Out</a>
+                    </li>
+                     <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div style="margin-left: 2%">
+        <h1>FAQ</h1>
+
+        <div class="faq">
+            <button class="accordion">What is Project SEED?</button>
+            <div class="panel">
+                <p>Project SEED is a platform for children diagnosed with ASD to effectively
+                    learn selected topics designed to facilitate a child's cognitive development,
+                    all for free.
+                </p>
+            </div>
+
+            <button class="accordion">How does Project SEED cater to my child's needs?</button>
+            <div class="panel">
+                <p>We prioritize your child's needs above all else. Our games focus on simple 
+                    cognitive skills that children with ASD tend to struggle with <a href="./todo.html">
+                        more than their peers. </a>
+                    We want to create a non-threatening environment for your child 
+                    to learn colors, shapes, and directions.
+                </p>
+            </div>
+
+            <button class="accordion">Why emphasize colors, shapes, and directions?</button>
+            <div class="panel">
+                <p>Answer with <a href="./todo.html">links</a> for each. Should cover WHY we
+                did what we did with respect to the games.
+            </p>
+            </div>
+
+            <button class="accordion">How do I access the games?</button>
+            <div class="panel">
+                <p>You can access the games on the <a href="./gamesPortal.html">Games</a> page.</p>
+            </div>
+
+            <button class="accordion">How can I track my child's scores?</button>
+            <div class="panel">
+                <p>You can access your child's scores on the <a href="./parentMain.html">Stats</a> page.</p>
+            </div>
+
+            <button class="accordion">What are some resources for understanding my child's needs 
+                in a game environment?</button>
+            <div class="panel">
+                <p>Answer with <a href="./todo.html">links</a> backing up what separates kids
+                with ASD from kids without it and their most important needs.
+                </p>
+            </div>
+
+
+        </div>
+      
+    <p> We would love to get your feedback via Project Seed's Forum! Feel free to comment about the structure and design of the games here. Please also let us know if you have found a bug or have feedback about technical aspects of the site. </p>
+        
+        <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      Provide Feedback
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Feedback Form</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Your feedback:</p>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    </div>
+    
+    
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <!-- Javascript Links-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

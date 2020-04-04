@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./parentMain.css" />
+    
+    <script src="https://kit.fontawesome.com/c3b71d08f6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+      
+    <div class="container">
+        
+      <div class="side-bar">
+        <div class="sidebar-item">
+          <a href="./landingPortal.html">
+            <span class="icon-container"
+              ><i class="fas fa-arrow-left fa-2x"></i></span
+          ></a>
+        </div>
+        <div class="sidebar-item">
+          <a href="./parentMain.html"><img id="side-img" src="./plant.png"/></a>
+          <p>Main Stats</p>
+        </div>
+        <div class="sidebar-item">
+          <a href="./colorStats.html"
+            ><img id="side-img" src="./balloon.png"
+          /></a>
+          <p>Color Pop!</p>
+        </div>
+        <div class="sidebar-item">
+          <a href="./todo.html"><img id="side-img" src="./shape.png"/></a>
+          <p>Shape Slide</p>
+        </div>
+        <div class="sidebar-item">
+          <a href="./todo.html"><img id="side-img" src="./house.png"/></a>
+          <p>Macy's Maze</p>
+        </div>
+      </div>
+        
+      <div class="main-area">
+        <h1>General Statistics</h1>
+        <div class="main-content">
+          <div class="left-area">
+            <div class="stat-area">
+              <h2>Number of Games Played: <span class="info">89</span></h2>
+              <h2>Total Time Played: <span class="info">32 Minutes</span></h2>
+              <h2>Total Correct Answers: <span class="info">106</span></h2>
+              <h2>Most Played Game: <span class="info">Balloon Pop!</span></h2>
+            </div>
+            <div class="progress-area">
+              <h2>Progress</h2>
+              <div class="item-container">
+                <div class="progress-item">
+                  <h3>Directions</h3>
+                  <img id="balloon-img" src="./Chart2.png" />
+                </div>
+                <div class="progress-item">
+                  <h3>Shapes</h3>
+                  <img id="balloon-img" src="./Chart3.png" />
+                </div>
+                <div class="progress-item">
+                  <h3>Colors</h3>
+                  <img id="balloon-img" src="./Chart4.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-area">
+            <div class="games-played-area">
+              <h2>Games Played</h2>
+              <div class="bar-area">
+                <img id="bar-img" src="./BarGraph.png" />
+              </div>
+              <p>Would you like weekly reports emailed to you?</p>                 
+                  <input type="radio" id="yes" name="report" value="yes">
+                  <label>Yes</label><br>
+                  <input type="radio" id="no" name="report" value="no">
+                  <label>No</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

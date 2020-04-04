@@ -1,0 +1,138 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+
+}
+.side-bar {
+  width: 5%;
+  height: 100vh;
+  background-color: lightgray;
+}
+.sidebar-item a,
+.sidebar-item a:hover {
+  text-decoration: none;
+  color: black;
+}
+.side-bar p {
+  color: black;
+  text-align: center;
+  margin-top: 0;
+}
+
+.sidebar-item {
+  background-color: lightgray;
+}
+
+.sidebar-item:hover {
+  background-color: gray;
+}
+
+#side-img {
+  width: 100%;
+}
+
+.main-area {
+  width: 70vw;
+  height: 95vh;
+  background-color: lightcyan;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 2%;
+  border-radius: 25px;
+}
+
+.progress-area {
+  width: 50%;
+  height: 20%;
+  margin: 5%;
+  text-align: center;
+}
+.progress-area h2 {
+  margin: 0;
+}
+.item-container {
+  display: flex;
+  flex-direction: row;
+}
+.progress-item img {
+  height: 75px;
+}
+.progress-item {
+  padding: 2%;
+  height: 200px;
+  width: 200px;
+}
+.stat-area {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1%;
+  padding-bottom: 5%;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.games-played-area {
+  text-align: left;
+}
+.games-played-area h2 {
+  text-align: center;
+}
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+#bar-img {
+  width: 100%;
+}
+.bar-area {
+  margin-right: 15%;
+  padding-left: 1%;
+  width: 95%;
+}
+.left-area {
+  width: 60%;
+}
+
+.info {
+  font-size: 20px;
+}
+
+#correct-img {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.graph-area {
+  margin-right: 15%;
+  padding-left: 1%;
+  width: 95%;
+}
+
+#easiest-img {
+  width: 100%;
+  display: block;
+  margin-left: 40%;
+  margin-right: auto;
+}
+
+
+.left-area p {
+  margin-left: 15%;
+}
+
