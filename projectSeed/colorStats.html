@@ -1,64 +1,92 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="./parentMain.css" />
-    <script
-      src="https://kit.fontawesome.com/c3b71d08f6.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="side-bar">
-        <div class="sidebar-item">
-          <a href="./landingPortal.html">
-            <span class="icon-container"
-              ><i class="fas fa-arrow-left fa-2x"></i></span
-          ></a>
-        </div>
-        <div class="sidebar-item">
-          <a href="./parentMain.html"><img id="side-img" src="./plant.png"/></a>
-          <p>Main Stats</p>
-        </div>
-        <div class="sidebar-item">
-          <a href="./colorStats.html"
-            ><img id="side-img" src="./balloon.png"
-          /></a>
-          <p>Color Pop!</p>
-        </div>
-        <div class="sidebar-item">
-          <a href="./todo.html"><img id="side-img" src="./shape.png"/></a>
-          <p>Shape Slide</p>
-        </div>
-        <div class="sidebar-item">
-          <a href="./todo.html"><img id="side-img" src="./house.png"/></a>
-          <p>Macy's Maze</p>
-        </div>
+
+<head>
+  <link rel="stylesheet" href="./parentMain.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://kit.fontawesome.com/c3b71d08f6.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav">
+        <li><a class="nav-link" href="./landingPortal.html">Home</a></li>
+        <li>
+          <a class="nav-link" href="./gamesPortal.html">Games</a>
+        </li>
+        <li>
+          <a class="nav-link active" href="./parentMain.html">Parent Portal</a>
+        </li>
+        <li>
+          <a class="nav-link" href="./faq.html">FAQ</a>
+        </li>
+        <li>
+          <a class="nav-link" href="./index.html">Sign out</a>
+        </li>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<body>
+  <div class="container2">
+    <div class="side-bar">
+      
+      <div class="sidebar-item">
+        <a href="./parentMain.html"><img id="side-img" src="./plant.png" /></a>
+        <p>Main Stats</p>
       </div>
-      <div class="main-area">
-        <h1>Balloon Pop! Statistics</h1>
-        <div class="main-content">
-          <div class="left-area">
-            <p>Games Played: 81</p>
-            <p>Avg Answer Time: 7 Seconds</p>
-            <p>Total Play Time: 21 Minutes</p>
-            <p>Progress to Completion: 100%</p>
-            <br>
-            <div class="progress-area">
-              <h2>Difficulty</h2>
-              <img id="easiest-img" src="./Chart5.png" />
-            </div>
+      <div class="sidebar-item">
+        <a href="./colorStats.html"><img id="side-img" src="./balloon.png" /></a>
+        <p>Color Pop!</p>
+      </div>
+      <div class="sidebar-item">
+        <a href="./todo.html"><img id="side-img" src="./shape.png" /></a>
+        <p>Shape Slide</p>
+      </div>
+      <div class="sidebar-item">
+        <a href="./todo.html"><img id="side-img" src="./house.png" /></a>
+        <p>Macy's Maze</p>
+      </div>
+    </div>
+    <div class="main-area">
+      <h1>Color Pop! Statistics</h1>
+      <div class="main-content">
+        <div class="left-area">
+          <p>Games Played: 81</p>
+          <p>Avg Answer Time: 7 Seconds</p>
+          <p>Total Play Time: 21 Minutes</p>
+          <p>Progress to Completion: 100%</p>
+          <br>
+          <div class="progress-area">
+            <h2>Difficulty</h2>
+            <img id="easiest-img" src="./Chart5.png" />
           </div>
-          <div class="right-area">
-            <div class="games-played-area">
-              <h2>% Correct</h2>
-              <div class="graph-area">
-                <img id="correct-img" src="./Chart1.png" />
-              </div>
+        </div>
+        <div class="right-area">
+          <div class="games-played-area">
+            <h2>% Correct</h2>
+            <div class="graph-area">
+              <img id="correct-img" src="./Chart1.png" />
             </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
